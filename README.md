@@ -6,7 +6,8 @@ click [here](https://overthewire.org/wargames/bandit/) to get to the site
 
 ```sh
 ssh bandit0@bandit.labs.overthewire.org -p 2220
-password : bandit0
+# password : bandit0
+
 ls
 # readme
 cat readme
@@ -47,7 +48,7 @@ cat spaces\ in\ this\ filename
 
 ```sh
 ssh bandit3@bandit.labs.overthewire.org -p 2220
-password : aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+# password : aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 
 cd inhere
 ls -al
@@ -63,7 +64,7 @@ cat .hidden
 
 ```sh
 ssh bandit4@bandit.labs.overthewire.org -p 2220
-password : 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+# password : 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 
 cd inhere
 ls -al
@@ -81,7 +82,7 @@ cat ./-file07
 
 ```sh
 ssh bandit5@bandit.labs.overthewire.org -p 2220
-password : lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+# password : lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
 cd inhere
 find -type f -size 1033c ! -executable
@@ -98,7 +99,7 @@ cat ./maybehere07/.file2
 
 ```sh
 ssh bandit6@bandit.labs.overthewire.org -p 2220
-password : P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+# password : P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
 cd /
 cat /var/lib/dpkg/info/bandit7.password
@@ -112,7 +113,7 @@ cat /var/lib/dpkg/info/bandit7.password
 
 ```sh
 ssh bandit7@bandit.labs.overthewire.org -p 2220
-password : z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+# password : z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 
 ls
 # data.txt
@@ -141,7 +142,7 @@ sort data.txt | uniq -u
 
 ```sh
 ssh bandit9@bandit.labs.overthewire.org -p 2220
-password : EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+# password : EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 
 cat data.txt | strings | grep ^=
 
@@ -152,7 +153,7 @@ cat data.txt | strings | grep ^=
 # ========== G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 ```
 
-> I guess the password is : G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+> I guess the password is : `G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s`
 
 ---
 
@@ -160,11 +161,12 @@ cat data.txt | strings | grep ^=
 
 ```sh
 ssh bandit10@bandit.labs.overthewire.org -p 2220
-password : G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+# password : G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 
 cat data.txt | base64 --decode
-# The password is 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 ```
+
+> result :  `6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM`
 
 ---
 
@@ -172,11 +174,12 @@ cat data.txt | base64 --decode
 
 ```sh
 ssh bandit11@bandit.labs.overthewire.org -p 2220
-password : 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+# password : 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 
 cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
-# The password is JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 ```
+
+> The result : `JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv`
 
 ---
 
@@ -184,7 +187,7 @@ cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 
 ```sh
 ssh bandit12@bandit.labs.overthewire.org -p 2220
-password : JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+# password : JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
 mkdir /tmp/myDir
 xxd -r data.txt > /tmp/myDir/compressed.gz
@@ -216,8 +219,9 @@ mv data8.bin data8.gz
 gunzip data8.gz
 
 cat data8
-# The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 ```
+
+> The result : `wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw`
 
 ---
 
@@ -244,7 +248,7 @@ nc localhost 30000
 # Paste the current password
 ```
 
-> result : jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+> result : `jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt`
 
 ---
 
@@ -261,7 +265,7 @@ openssl s_client -connect localhost:30001
 
 ```
 
-> result : JQttfApK4SeyHwDlI9SXGR50qclOAil1
+> result : `JQttfApK4SeyHwDlI9SXGR50qclOAil1`
 
 ---
 
@@ -279,6 +283,8 @@ I used Windows OS, so I did this on command line
 - The [sshkey.private](./sshkey.private) file is here.
 
 ```cmd
+# PS : My Windows have eval function
+
 eval $(ssh-agent)
 ssh-add ./sshkey.private
 
@@ -293,7 +299,7 @@ ssh bandit17@bandit.labs.overthewire.org -p 2220
 diff password.old password.new
 ```
 
-> result for the password.new (the password to use) : hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+> result for the password.new (the password to use) : `hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg`
 
 ---
 
@@ -326,7 +332,7 @@ ls
 cat readme
 ```
 
-> The result : awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+> The result : `awhqfNnAbc1naukrpqDYcF95h7HoMTrC`
 
 ---
 
@@ -344,7 +350,7 @@ ls
 ./bandit20-do cat /etc/bandit_pass/bandit20
 ```
 
-> The result : VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+> The result : `VxCazJaVykI6W36BkBU0mJTCM8rR95XT`
 
 ---
 
@@ -364,7 +370,7 @@ echo -n 'VxCazJaVykI6W36BkBU0mJTCM8rR95XT' | nc -l -p 3445 &
 ./suconnect  3445
 ```
 
-> The result : NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+> The result : `NvEJF7oVjkddltPSrdKEFOllh9V1IBcq`
 
 ---
 
@@ -381,7 +387,7 @@ cat cronjob_bandit22.sh
 cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 ```
 
-> The result : WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
+> The result : `WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff`
 
 ---
 
@@ -401,7 +407,7 @@ echo I am user bandit23 | md5sum | cut -d ' ' -f 1
 cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 ```
 
-> The result : QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
+> The result : `QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G`
 
 ---
 
