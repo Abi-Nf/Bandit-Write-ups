@@ -1,34 +1,6 @@
-# Bandit exercices
+# OtherTheWire Bandit game server
 
 click [here](https://overthewire.org/wargames/bandit/) to get to the site
-
-## level0 -> level1
-
-```sh
-ssh bandit0@bandit.labs.overthewire.org -p 2220
-# password : bandit0
-
-ls
-# readme
-cat readme
-```
-
-> The result : NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
-
----
-
-## level1-> level2
-
-```sh
-ssh bandit1@bandit.labs.overthewire.org -p 2220
-# password : NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
-
-cat '/home/bandit1/-'
-```
-
-> The result : `rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi`
-
----
 
 ## level2 -> level3
 
@@ -410,10 +382,13 @@ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 ## level23 -> level24
 
 ```sh
-
+ssh bandit23@bandit.labs.overthewire.org -p 2220
+# password : QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
 ```
 
 > The result :
+
+---
 
 ## level24 -> level25
 
@@ -460,6 +435,7 @@ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 ## level31 -> level32
 
 ```sh
+
 ```
 
 > The result :
@@ -477,3 +453,11 @@ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 ```
 
 > The result :
+
+
+
+
+
+
+cp bandit24_pass.sh /var/spool/bandit24/foo/bandit24_pass.sh
+cat password
