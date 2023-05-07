@@ -1,5 +1,7 @@
 # Bandit exercices
 
+click [here](https://overthewire.org/wargames/bandit/) to get to the site
+
 ## level0 -> level1
 
 ```sh
