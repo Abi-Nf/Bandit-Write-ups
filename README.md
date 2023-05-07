@@ -278,13 +278,9 @@ openssl s_client localhost:31790
 exit
 ```
 
-I used Windows OS, so I did this on command line
-
 - The [sshkey.private](./sshkey.private) file is here.
 
 ```cmd
-# PS : My Windows have eval function
-
 eval $(ssh-agent)
 ssh-add ./sshkey.private
 
